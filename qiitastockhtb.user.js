@@ -14,10 +14,12 @@
 const hatebapi = "https://b.hatena.ne.jp/entry/jsonlite/";
 const qiitalist = "https://qiita.com";
 
-$(".u-link-no-underline").each(function(index,element) {
+const stocks = document.querySelectorAll(".u-link-no-underline");
+
+for ( let element of stocks) {
   $.ajax({
     url : hatebapi,
-    data : {url : encodeURI(qiitalist + $(element).attr("href"))},
+    data : {url : encodeURI(qiitalist + element.getAttribute("href"))},
     dataType : "jsonp",
     success : function(data) {
       $(element).parent().append(
@@ -34,4 +36,4 @@ $(".u-link-no-underline").each(function(index,element) {
       );
     }
   });
-});
+};
