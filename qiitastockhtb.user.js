@@ -3,7 +3,7 @@
 // @namespace    https://qiita.com
 // @version      1.1.0
 // @description  Qiitaのストック一覧にはてブ数を表示します。
-// @author       Sho Nakajima
+// @author       naksho
 // @include      /^https:\/\/qiita\.com\/stock/
 // @require      https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.1.3/fetch-jsonp.min.js
 // @downloadURL  
