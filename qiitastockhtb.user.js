@@ -32,7 +32,7 @@ for ( let element of stocks) {
     + "' "
     + "target='_blank'"
     + ">"
-    + "<span style='font-weight:bold; color:#f88; font-size:11px;'>"
+    + "<span style='font-weight:bold; color:#f88; font-size:11px; text-decoration: underline; background-color: #fee;'>"
     + responseText
     + "users</span>"
     + "</a>"
